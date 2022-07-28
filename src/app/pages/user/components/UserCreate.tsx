@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styles from '../user.module.css';
 import { IUser } from '../../../interfaces/IUser';
 import { postUsers } from '../../../services/UserService';
 
@@ -53,7 +52,7 @@ const UserCreate = ({ setShowModalCreate, handleUsers }: any) => {
     }
 
     return (
-        <div className={styles.modalCreateUser}>
+        <div className="modalBackground">
             <div className="modal" style={{ display: 'block' }}>
                 <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
@@ -62,7 +61,7 @@ const UserCreate = ({ setShowModalCreate, handleUsers }: any) => {
                         <button type="button" className="btn-close" onClick={() => setShowModalCreate(false)}></button>
                     </div>
                     <div className="modal-body">
-                        { required && <p className={styles.msgError}>Todos los campos son obligatorios</p> }
+                        { required && <p className="msgError">Todos los campos son obligatorios</p> }
                         <form className="row g-3" autoComplete="false">
                             <div className="col-md-6">
                                 <label htmlFor="name" className="form-label">Nombre</label>
@@ -127,7 +126,7 @@ const UserCreate = ({ setShowModalCreate, handleUsers }: any) => {
                     </div>
                     <div className="modal-footer">
                         <button type="button" className="btn btn-secondary" onClick={() => setShowModalCreate(false)}>Cerrar</button>
-                        <button type="button" className="btn btn-primary" onClick={handleSubmit}>Guarar</button>
+                        <button type="button" className="btn btn-primary" onClick={handleSubmit}>Guardar</button>
                     </div>
                     </div>
                 </div>
