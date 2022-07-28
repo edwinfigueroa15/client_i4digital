@@ -1,0 +1,17 @@
+
+.buttonStatusActive {
+    border: none;
+    border-radius: 50%;
+    background-color: #2ECC71;
+    box-shadow: 0px 0px 15px #2ECC71;
+    width: 25px;
+    height: 25px;
+}
+.buttonStatusInactive {
+    border: none;
+    border-radius: 50%;
+    background-color: #E74C3C;
+    box-shadow: 0px 0px 15px #E74C3C;
+    width: 25px;
+    height: 25px;
+}
